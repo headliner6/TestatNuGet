@@ -1,0 +1,46 @@
+﻿<UserControl x:Class="TestatNuGet.View.TestatNuGetView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:TestatNuGet.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+        </Grid.RowDefinitions>
+        <GroupBox Header="Navigation" Grid.Row="0">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="50"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="auto"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock x:Name="txtblock_connection" Grid.Row="0" Text="Server Connection String: " Width="150" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                <TextBox x:Name="txtbox_connectionString" HorizontalAlignment="Left" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" Width="400" Height="20"/>
+                <Button x:Name="button_load" Grid.Row="1" Grid.Column="0" Content="Load" HorizontalAlignment="Left" VerticalAlignment="Center" Width="75"/>
+                <Button x:Name="button_confirm" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Content="Confirm" HorizontalAlignment="Center" VerticalAlignment="Center" Width="75" />
+                <Button x:Name="button_add" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Content="Add" HorizontalAlignment="Right" VerticalAlignment="Center" Width="75" />
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="Data" Grid.Row="1">
+            <DataGrid HorizontalAlignment="stretch" Grid.Row="1" VerticalScrollBarVisibility="auto">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="id" Width="80"/>
+                    <DataGridTextColumn Header="pod" Width="80"/>
+                    <DataGridTextColumn Header="location" Width="80"/>
+                    <DataGridTextColumn Header="hostname" Width="80"/>
+                    <DataGridTextColumn Header="severity" Width="80"/>
+                    <DataGridTextColumn Header="timestamp" Width="80"/>
+                    <DataGridTextColumn Header="message" Width="80"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </GroupBox>
+    </Grid>
+</UserControl>

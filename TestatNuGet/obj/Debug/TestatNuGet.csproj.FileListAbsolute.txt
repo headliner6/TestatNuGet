@@ -1,0 +1,36 @@
+C:\Users\waldburger\Dropbox\HF\Programmierung II\TestatNuGet\bin\Debug\TestatNuGet.exe.config
+C:\Users\waldburger\Dropbox\HF\Programmierung II\TestatNuGet\bin\Debug\TestatNuGet.exe
+C:\Users\waldburger\Dropbox\HF\Programmierung II\TestatNuGet\bin\Debug\TestatNuGet.pdb
+C:\Users\waldburger\Dropbox\HF\Programmierung II\TestatNuGet\obj\Debug\TestatNuGet.csprojAssemblyReference.cache
+C:\Users\waldburger\Dropbox\HF\Programmierung II\TestatNuGet\obj\Debug\MainWindow.g.cs
+C:\Users\waldburger\Dropbox\HF\Programmierung II\TestatNuGet\obj\Debug\View\TestatNuGetView.g.cs
+C:\Users\waldburger\Dropbox\HF\Programmierung II\TestatNuGet\obj\Debug\App.g.cs
+C:\Users\waldburger\Dropbox\HF\Programmierung II\TestatNuGet\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\waldburger\Dropbox\HF\Programmierung II\TestatNuGet\obj\Debug\TestatNuGet_MarkupCompile.cache
+C:\Users\waldburger\Dropbox\HF\Programmierung II\TestatNuGet\obj\Debug\TestatNuGet_MarkupCompile.lref
+C:\Users\waldburger\Dropbox\HF\Programmierung II\TestatNuGet\obj\Debug\MainWindow.baml
+C:\Users\waldburger\Dropbox\HF\Programmierung II\TestatNuGet\obj\Debug\View\TestatNuGetView.baml
+C:\Users\waldburger\Dropbox\HF\Programmierung II\TestatNuGet\obj\Debug\TestatNuGet.g.resources
+C:\Users\waldburger\Dropbox\HF\Programmierung II\TestatNuGet\obj\Debug\TestatNuGet.Properties.Resources.resources
+C:\Users\waldburger\Dropbox\HF\Programmierung II\TestatNuGet\obj\Debug\TestatNuGet.csproj.GenerateResource.cache
+C:\Users\waldburger\Dropbox\HF\Programmierung II\TestatNuGet\obj\Debug\TestatNuGet.csproj.CoreCompileInputs.cache
+C:\Users\waldburger\Dropbox\HF\Programmierung II\TestatNuGet\obj\Debug\TestatNuGet.exe
+C:\Users\waldburger\Dropbox\HF\Programmierung II\TestatNuGet\obj\Debug\TestatNuGet.pdb
+C:\Workspace\ProgrammingAdvanced\TestatNuGet\bin\Debug\TestatNuGet.exe.config
+C:\Workspace\ProgrammingAdvanced\TestatNuGet\bin\Debug\TestatNuGet.exe
+C:\Workspace\ProgrammingAdvanced\TestatNuGet\bin\Debug\TestatNuGet.pdb
+C:\Workspace\ProgrammingAdvanced\TestatNuGet\obj\Debug\TestatNuGet.csprojAssemblyReference.cache
+C:\Workspace\ProgrammingAdvanced\TestatNuGet\obj\Debug\MainWindow.g.cs
+C:\Workspace\ProgrammingAdvanced\TestatNuGet\obj\Debug\View\TestatNuGetView.g.cs
+C:\Workspace\ProgrammingAdvanced\TestatNuGet\obj\Debug\App.g.cs
+C:\Workspace\ProgrammingAdvanced\TestatNuGet\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Workspace\ProgrammingAdvanced\TestatNuGet\obj\Debug\TestatNuGet_MarkupCompile.cache
+C:\Workspace\ProgrammingAdvanced\TestatNuGet\obj\Debug\TestatNuGet_MarkupCompile.lref
+C:\Workspace\ProgrammingAdvanced\TestatNuGet\obj\Debug\MainWindow.baml
+C:\Workspace\ProgrammingAdvanced\TestatNuGet\obj\Debug\View\TestatNuGetView.baml
+C:\Workspace\ProgrammingAdvanced\TestatNuGet\obj\Debug\TestatNuGet.g.resources
+C:\Workspace\ProgrammingAdvanced\TestatNuGet\obj\Debug\TestatNuGet.Properties.Resources.resources
+C:\Workspace\ProgrammingAdvanced\TestatNuGet\obj\Debug\TestatNuGet.csproj.GenerateResource.cache
+C:\Workspace\ProgrammingAdvanced\TestatNuGet\obj\Debug\TestatNuGet.csproj.CoreCompileInputs.cache
+C:\Workspace\ProgrammingAdvanced\TestatNuGet\obj\Debug\TestatNuGet.exe
+C:\Workspace\ProgrammingAdvanced\TestatNuGet\obj\Debug\TestatNuGet.pdb
