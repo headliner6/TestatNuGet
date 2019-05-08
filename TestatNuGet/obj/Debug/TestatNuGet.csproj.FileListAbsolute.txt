@@ -34,3 +34,9 @@ C:\Workspace\ProgrammingAdvanced\TestatNuGet\obj\Debug\TestatNuGet.csproj.Genera
 C:\Workspace\ProgrammingAdvanced\TestatNuGet\obj\Debug\TestatNuGet.csproj.CoreCompileInputs.cache
 C:\Workspace\ProgrammingAdvanced\TestatNuGet\obj\Debug\TestatNuGet.exe
 C:\Workspace\ProgrammingAdvanced\TestatNuGet\obj\Debug\TestatNuGet.pdb
+C:\Workspace\ProgrammingAdvanced\TestatNuGet\bin\Debug\BouncyCastle.Crypto.dll
+C:\Workspace\ProgrammingAdvanced\TestatNuGet\bin\Debug\Google.Protobuf.dll
+C:\Workspace\ProgrammingAdvanced\TestatNuGet\bin\Debug\MySql.Data.dll
+C:\Workspace\ProgrammingAdvanced\TestatNuGet\bin\Debug\Google.Protobuf.xml
+C:\Workspace\ProgrammingAdvanced\TestatNuGet\bin\Debug\MySql.Data.xml
+C:\Workspace\ProgrammingAdvanced\TestatNuGet\obj\Debug\TestatNuGet.csproj.CopyComplete

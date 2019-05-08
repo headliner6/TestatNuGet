@@ -23,22 +23,22 @@
                     <ColumnDefinition Width="auto"/>
                 </Grid.ColumnDefinitions>
                 <TextBlock x:Name="txtblock_connection" Grid.Row="0" Text="Server Connection String: " Width="150" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-                <TextBox x:Name="txtbox_connectionString" HorizontalAlignment="Left" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" Width="400" Height="20"/>
-                <Button x:Name="button_load" Grid.Row="1" Grid.Column="0" Content="Load" HorizontalAlignment="Left" VerticalAlignment="Center" Width="75"/>
+                <TextBox x:Name="txtbox_connectionString" Text="{Binding Path=ConnectionString}" HorizontalAlignment="Left" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" Width="400" Height="20"/>
+                <Button x:Name="button_load"  Grid.Row="1" Grid.Column="0" Content="Load" HorizontalAlignment="Left" VerticalAlignment="Center" Width="75"/>
                 <Button x:Name="button_confirm" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Content="Confirm" HorizontalAlignment="Center" VerticalAlignment="Center" Width="75" />
                 <Button x:Name="button_add" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Content="Add" HorizontalAlignment="Right" VerticalAlignment="Center" Width="75" />
             </Grid>
         </GroupBox>
         <GroupBox Header="Data" Grid.Row="1">
-            <DataGrid HorizontalAlignment="stretch" Grid.Row="1" VerticalScrollBarVisibility="auto">
+            <DataGrid ItemsSource="{Binding Logentries}" HorizontalAlignment="stretch" Grid.Row="1" VerticalScrollBarVisibility="auto" Height="200">
                 <DataGrid.Columns>
-                    <DataGridTextColumn Header="id" Width="80"/>
-                    <DataGridTextColumn Header="pod" Width="80"/>
-                    <DataGridTextColumn Header="location" Width="80"/>
-                    <DataGridTextColumn Header="hostname" Width="80"/>
-                    <DataGridTextColumn Header="severity" Width="80"/>
-                    <DataGridTextColumn Header="timestamp" Width="80"/>
-                    <DataGridTextColumn Header="message" Width="80"/>
+                    <DataGridTextColumn Header="id" Binding="{Binding Path=Id}" Width="80"/>
+                    <DataGridTextColumn Header="pod" Binding="{Binding Path=Pod}" Width="80"/>
+                    <DataGridTextColumn Header="location" Binding="{Binding Path=Location}" Width="80"/>
+                    <DataGridTextColumn Header="hostname" Binding="{Binding Path=Hostname}" Width="80"/>
+                    <DataGridTextColumn Header="severity" Binding="{Binding Path=Severity}" Width="80"/>
+                    <DataGridTextColumn Header="timestamp" Binding="{Binding Path=Timestamp}" Width="80"/>
+                    <DataGridTextColumn Header="message" Binding="{Binding Path=Message}" Width="80"/>
                 </DataGrid.Columns>
             </DataGrid>
         </GroupBox>
