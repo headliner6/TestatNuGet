@@ -13,6 +13,7 @@ namespace TestatNuGet.ViewModel
 
         public LogentriesViewModel()
         {
+            ConnectionString = "Server = localhost; Database = ; Uid = root; Pwd = ;";
             Logentries = new ObservableCollection<LogentriesModel>();
         }
 
