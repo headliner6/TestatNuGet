@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using TestatNuGet.ViewModel;
 
 namespace TestatNuGet.View
 {
@@ -23,6 +24,7 @@ namespace TestatNuGet.View
         public TestatNuGetView()
         {
             InitializeComponent();
+            this.DataContext = new LogentriesViewModel();
         }
     }
 }

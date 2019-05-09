@@ -30,16 +30,7 @@
             </Grid>
         </GroupBox>
         <GroupBox Header="Data" Grid.Row="1">
-            <DataGrid ItemsSource="{Binding Logentries}" HorizontalAlignment="stretch" Grid.Row="1" VerticalScrollBarVisibility="auto" Height="200">
-                <DataGrid.Columns>
-                    <DataGridTextColumn Header="id" Binding="{Binding Path=Id}" Width="80"/>
-                    <DataGridTextColumn Header="pod" Binding="{Binding Path=Pod}" Width="80"/>
-                    <DataGridTextColumn Header="location" Binding="{Binding Path=Location}" Width="80"/>
-                    <DataGridTextColumn Header="hostname" Binding="{Binding Path=Hostname}" Width="80"/>
-                    <DataGridTextColumn Header="severity" Binding="{Binding Path=Severity}" Width="80"/>
-                    <DataGridTextColumn Header="timestamp" Binding="{Binding Path=Timestamp}" Width="80"/>
-                    <DataGridTextColumn Header="message" Binding="{Binding Path=Message}" Width="80"/>
-                </DataGrid.Columns>
+            <DataGrid ItemsSource="{Binding Path=Logentries, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="stretch" Grid.Row="1" VerticalScrollBarVisibility="auto" Height="200">
             </DataGrid>
         </GroupBox>
     </Grid>
