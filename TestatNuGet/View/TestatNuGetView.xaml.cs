@@ -16,5 +16,17 @@ namespace TestatNuGet.View
             FrameworkElement fe = sender as FrameworkElement;
             ((LogentriesViewModel)fe.DataContext).LoadLogentries();
         }
+        /*
+        private void Button_confirm_Click(object sender, RoutedEventArgs e)
+        {
+            FrameworkElement fe = sender as FrameworkElement;
+            ((LogentriesViewModel)fe.DataContext).ConfirmLogentries();
+        }
+        private void Button_add_Click(object sender, RoutedEventArgs e)
+        {
+            FrameworkElement fe = sender as FrameworkElement;
+            ((LogentriesViewModel)fe.DataContext).AddMessage();
+        }
+        */
     }
 }
