@@ -24,13 +24,13 @@
                 </Grid.ColumnDefinitions>
                 <TextBlock x:Name="txtblock_connection" Grid.Row="0" Text="Server Connection String: " Width="150" HorizontalAlignment="Left" VerticalAlignment="Center"/>
                 <TextBox x:Name="txtbox_connectionString" Text="{Binding Path=ConnectionString}" HorizontalAlignment="Left" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" Width="400" Height="20"/>
-                <Button x:Name="button_load" Click="button_load_Click"  Grid.Row="1" Grid.Column="0" Content="Load" HorizontalAlignment="Left" VerticalAlignment="Center" Width="75"/>
+                <Button x:Name="button_load" Click="Button_load_Click" Grid.Row="1" Grid.Column="0" Content="Load" HorizontalAlignment="Left" VerticalAlignment="Center" Width="75"/>
                 <Button x:Name="button_confirm" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Content="Confirm" HorizontalAlignment="Center" VerticalAlignment="Center" Width="75" />
                 <Button x:Name="button_add" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Content="Add" HorizontalAlignment="Right" VerticalAlignment="Center" Width="75" />
             </Grid>
         </GroupBox>
         <GroupBox Header="Data" Grid.Row="1">
-            <DataGrid ItemsSource="{Binding Path=Logentries, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="stretch" Grid.Row="1" VerticalScrollBarVisibility="auto" Height="200">
+            <DataGrid Name="logentrie_dataGrid" ItemsSource="{Binding Path=Logentries, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="stretch" Grid.Row="1" VerticalScrollBarVisibility="auto" Height="200">
             </DataGrid>
         </GroupBox>
     </Grid>

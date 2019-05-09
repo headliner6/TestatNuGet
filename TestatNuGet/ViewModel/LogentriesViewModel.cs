@@ -7,18 +7,17 @@ namespace TestatNuGet.ViewModel
 {
     public class LogentriesViewModel
     {
-        public string ConnectionString { get; set; }
+        public string ConnectionString { get; set; } // Server=localhost;Database=semesterarbeit;Uid=root;Pwd=password;
         public ObservableCollection<LogentriesModel> Logentries { get; set; }
 
         public LogentriesViewModel()
         {
             Logentries = new ObservableCollection<LogentriesModel>();
-            //LoadLogentries(); //funktioniert DataGrid hat den Inhalt der DB.... TODO die Methode mit einem Button aufrufen.
         }
 
         public void LoadLogentries()
         {
-            var con = new MySqlConnection("Server=localhost;Database=semesterarbeit;Uid=root;Pwd=password;");
+            var con = new MySqlConnection(ConnectionString);
             con.Open();
             using (var cmd = con.CreateCommand())
             {

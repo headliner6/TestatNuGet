@@ -31,7 +31,8 @@ namespace TestatNuGet.View
 
         private void Button_load_Click(object sender, RoutedEventArgs e)
         {
-            lvm.LoadLogentries();
+            FrameworkElement fe = sender as FrameworkElement;
+            ((LogentriesViewModel)fe.DataContext).LoadLogentries();
         }
     }
 }
