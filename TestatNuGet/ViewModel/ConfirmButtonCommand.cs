@@ -11,7 +11,6 @@ namespace TestatNuGet.ViewModel
     public class ConfirmButtonCommand : ICommand
     {
         public event EventHandler CanExecuteChanged;
-
         private LogentriesViewModel _logentriesViewModel;
         public ConfirmButtonCommand(LogentriesViewModel lvm)
         {
@@ -21,7 +20,6 @@ namespace TestatNuGet.ViewModel
         {
             return true;
         }
-
         public void Execute(object parameter)
         {
             LogentriesModel lm = (LogentriesModel)parameter;

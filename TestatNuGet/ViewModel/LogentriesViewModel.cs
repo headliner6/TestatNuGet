@@ -16,26 +16,14 @@ namespace TestatNuGet.ViewModel
         public ObservableCollection<LogentriesModel> Logentries { get; set; }
         public LoadButtonCommand LoadButtonCommand
         {
-            get
-            {
-                return this._loadButtonCommand;
-            }
-            set
-            {
-                this._loadButtonCommand = value;
-            }
+            get{ return this._loadButtonCommand;}
+            set{this._loadButtonCommand = value;}
         }
 
         public ConfirmButtonCommand ConfirmButtonCommand
         {
-            get
-            {
-                return this._confirmButtonCommand;
-            }
-            set
-            {
-                this._confirmButtonCommand = value;
-            }
+            get{return this._confirmButtonCommand;}
+            set{this._confirmButtonCommand = value;}
         }
 
         public LogentriesViewModel()

@@ -20,7 +20,6 @@ namespace TestatNuGet.ViewModel
         {
             return true;
         }
-
         public void Execute(object parameter)
         {
             _logentriesViewModel.LoadLogentries();

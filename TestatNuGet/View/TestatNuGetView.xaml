@@ -26,16 +26,55 @@
                     <ColumnDefinition Width="auto"/>
                     <ColumnDefinition Width="auto"/>
                 </Grid.ColumnDefinitions>
-                <TextBlock x:Name="txtblock_connection" Grid.Row="0" Text="Server Connection String: " Width="150" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-                <TextBox x:Name="txtbox_connectionString" Text="{Binding Path=ConnectionString}" HorizontalAlignment="Left" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" Width="450" Height="20"/>
-                <Button x:Name="button_load" Command="{Binding LoadButtonCommand}" Grid.Row="1" Grid.Column="0" Content="Load" HorizontalAlignment="Left" VerticalAlignment="Center" Width="75"/>
-                <Button x:Name="button_confirm" Command="{Binding ConfirmButtonCommand}" CommandParameter="{Binding SelectedDataGridRow}" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Content="Confirm" HorizontalAlignment="Center" VerticalAlignment="Center" Width="75" />
-                <Button x:Name="button_add" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Content="Add" HorizontalAlignment="Right" VerticalAlignment="Center" Width="75" />
+                <TextBlock x:Name="txtblock_connection"
+                           Grid.Row="0" Text="Server Connection String: "
+                           Width="150"
+                           HorizontalAlignment="Left"
+                           VerticalAlignment="Center"/>
+                <TextBox x:Name="txtbox_connectionString"
+                         Text="{Binding Path=ConnectionString}"
+                         HorizontalAlignment="Left"
+                         Grid.Row="0"
+                         Grid.Column="1"
+                         Grid.ColumnSpan="2"
+                         Width="450"
+                         Height="20"/>
+                <Button x:Name="button_load"
+                        Command="{Binding LoadButtonCommand}"
+                        Grid.Row="1"
+                        Grid.Column="0"
+                        Content="Load"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        Width="75"/>
+                <Button x:Name="button_confirm"
+                        Command="{Binding ConfirmButtonCommand}"
+                        CommandParameter="{Binding SelectedDataGridRow}"
+                        Grid.Row="1"
+                        Grid.Column="0"
+                        Grid.ColumnSpan="2"
+                        Content="Confirm"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        Width="75" />
+                <Button x:Name="button_add"
+                        Grid.Row="1"
+                        Grid.Column="0"
+                        Grid.ColumnSpan="2"
+                        Content="Add"
+                        HorizontalAlignment="Right"
+                        VerticalAlignment="Center"
+                        Width="75" />
             </Grid>
         </GroupBox>
         <GroupBox Header="Data" Grid.Row="1">
-            <DataGrid x:Name="logentrie_dataGrid" ItemsSource="{Binding Path=Logentries, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" SelectedItem="{Binding Path=SelectedDataGridRow, Mode=TwoWay}" HorizontalAlignment="stretch" Grid.Row="1" VerticalScrollBarVisibility="auto" Height="200">
-            </DataGrid>
+            <DataGrid x:Name="logentrie_dataGrid"
+                      ItemsSource="{Binding Path=Logentries, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                      SelectedItem="{Binding Path=SelectedDataGridRow, Mode=TwoWay}"
+                      HorizontalAlignment="stretch"
+                      Grid.Row="1"
+                      VerticalScrollBarVisibility="auto"
+                      Height="200"/>
         </GroupBox>
     </Grid>
 </UserControl>
