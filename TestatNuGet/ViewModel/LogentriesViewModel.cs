@@ -3,18 +3,33 @@ using System.ComponentModel;
 using TestatNuGet.Model;
 using MySql.Data.MySqlClient;
 using System.Data;
+using System.Windows.Input;
 
 namespace TestatNuGet.ViewModel
 {
     public class LogentriesViewModel
     {
+        private LoadButtonCommand _loadButtonCommand;
         public string ConnectionString { get; set; } // Server=localhost;Database=semesterarbeit;Uid=root;Pwd=password;
         public ObservableCollection<LogentriesModel> Logentries { get; set; }
+        public LoadButtonCommand LoadButtonCommand
+        {
+            get
+            {
+                return this._loadButtonCommand;
+            }
+            set
+            {
+                this._loadButtonCommand = value;
+            }
+        }
 
         public LogentriesViewModel()
         {
+            _loadButtonCommand = new LoadButtonCommand(this);
             ConnectionString = "Server = localhost; Database = ; Uid = root; Pwd = ;";
             Logentries = new ObservableCollection<LogentriesModel>();
+
         }
 
         public void LoadLogentries()
