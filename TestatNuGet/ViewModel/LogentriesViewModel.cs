@@ -13,7 +13,7 @@ namespace TestatNuGet.ViewModel
         public LogentriesViewModel()
         {
             Logentries = new ObservableCollection<LogentriesModel>();
-            LoadLogentries(); //funktioniert DataGrid hat den Inhalt der DB.... TODO die Methode mit einem Button aufrufen.
+            //LoadLogentries(); //funktioniert DataGrid hat den Inhalt der DB.... TODO die Methode mit einem Button aufrufen.
         }
 
         public void LoadLogentries()

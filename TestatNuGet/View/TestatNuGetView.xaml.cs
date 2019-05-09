@@ -21,10 +21,17 @@ namespace TestatNuGet.View
     /// </summary>
     public partial class TestatNuGetView : UserControl
     {
+        private LogentriesViewModel lvm;
         public TestatNuGetView()
         {
             InitializeComponent();
-            this.DataContext = new LogentriesViewModel();
+            lvm = new LogentriesViewModel();
+            this.DataContext = lvm;
+        }
+
+        private void Button_load_Click(object sender, RoutedEventArgs e)
+        {
+            lvm.LoadLogentries();
         }
     }
 }
