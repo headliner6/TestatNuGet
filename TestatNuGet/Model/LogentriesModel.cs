@@ -15,9 +15,8 @@ namespace TestatNuGet.Model
         public int Severity { get; set; }
         public string Timestamp { get; set; }
         public string Message { get; set; }
-        private bool Confirmed { get; set; }
 
-        public LogentriesModel(int id, string pod, string location, string hostname, int severity, string timestamp, string message, bool confirmed)
+        public LogentriesModel(int id, string pod, string location, string hostname, int severity, string timestamp, string message)
         {
             this.Id = id;
             this.Pod = pod;
@@ -26,7 +25,6 @@ namespace TestatNuGet.Model
             this.Severity = severity;
             this.Timestamp = timestamp;
             this.Message = message;
-            this.Confirmed = confirmed;
         }
     }
 }

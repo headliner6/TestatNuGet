@@ -2,6 +2,7 @@
 using System.ComponentModel;
 using TestatNuGet.Model;
 using MySql.Data.MySqlClient;
+using System.Data;
 
 namespace TestatNuGet.ViewModel
 {
@@ -18,9 +19,9 @@ namespace TestatNuGet.ViewModel
         public void LoadLogentries()
         {
             this.Logentries.Clear();
-            var con = new MySqlConnection(ConnectionString);
-            con.Open();
-            using (var cmd = con.CreateCommand())
+            var connection = new MySqlConnection(ConnectionString);
+            connection.Open();
+            using (var cmd = connection.CreateCommand())
             {
                 cmd.CommandText = "SELECT id, pod, location, hostname, severity, timestamp, message FROM v_logentries";
                 using (var reader = cmd.ExecuteReader())
@@ -34,22 +35,41 @@ namespace TestatNuGet.ViewModel
                             reader.GetString("Hostname"),
                             reader.GetInt32("Severity"),
                             reader.GetString("Timestamp"),
-                            reader.GetString("Message"),
-                            false //Confirmed
+                            reader.GetString("Message")
                             ));
                     }
                 }
             }
+            connection.Close();
         }
 
-        public void ConfirmLogentries()
+        public void ConfirmLogentries(int id)
         {
-
+            var connection = new MySqlConnection(ConnectionString);
+            using (var cmd = connection.CreateCommand())
+            {
+                cmd.CommandText = "LogClear";
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@Id", id);
+                cmd.ExecuteNonQuery();
+            }
+            connection.Close();
         }
 
-        public void AddMessage()
+        public void AddMessage(string pod, string hostname, string level, string message)
         {
-
+            var connection = new MySqlConnection(ConnectionString);
+            using (var cmd = connection.CreateCommand())
+            {
+                cmd.CommandText = "LogMessageAdd";
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@Pod", pod);
+                cmd.Parameters.AddWithValue("@Hostname", hostname);
+                cmd.Parameters.AddWithValue("@Level", level);
+                cmd.Parameters.AddWithValue("@Logmessage", message);
+                cmd.ExecuteNonQuery();
+            }
+            connection.Close();
         }
     }
 }
