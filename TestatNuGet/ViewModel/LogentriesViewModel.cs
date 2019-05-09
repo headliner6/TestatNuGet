@@ -17,6 +17,7 @@ namespace TestatNuGet.ViewModel
 
         public void LoadLogentries()
         {
+            this.Logentries.Clear();
             var con = new MySqlConnection(ConnectionString);
             con.Open();
             using (var cmd = con.CreateCommand())
