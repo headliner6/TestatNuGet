@@ -10,7 +10,9 @@ namespace TestatNuGet.ViewModel
     public class LogentriesViewModel
     {
         private LoadButtonCommand _loadButtonCommand;
-        public string ConnectionString { get; set; } // Server=localhost;Database=semesterarbeit;Uid=root;Pwd=password;
+        private ConfirmButtonCommand _confirmButtonCommand;
+        public string ConnectionString { get; set; }
+        public LogentriesModel SelectedDataGridRow { get; set; }
         public ObservableCollection<LogentriesModel> Logentries { get; set; }
         public LoadButtonCommand LoadButtonCommand
         {
@@ -24,12 +26,24 @@ namespace TestatNuGet.ViewModel
             }
         }
 
+        public ConfirmButtonCommand ConfirmButtonCommand
+        {
+            get
+            {
+                return this._confirmButtonCommand;
+            }
+            set
+            {
+                this._confirmButtonCommand = value;
+            }
+        }
+
         public LogentriesViewModel()
         {
             _loadButtonCommand = new LoadButtonCommand(this);
-            ConnectionString = "Server = localhost; Database = ; Uid = root; Pwd = ;";
+            _confirmButtonCommand = new ConfirmButtonCommand(this);
             Logentries = new ObservableCollection<LogentriesModel>();
-
+            ConnectionString = "Server = localhost; Database = ; Uid = root; Pwd = ;";
         }
 
         public void LoadLogentries()
@@ -62,11 +76,12 @@ namespace TestatNuGet.ViewModel
         public void ConfirmLogentries(int id)
         {
             var connection = new MySqlConnection(ConnectionString);
+            connection.Open();
             using (var cmd = connection.CreateCommand())
             {
                 cmd.CommandText = "LogClear";
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@Id", id);
+                cmd.Parameters.AddWithValue("@_logentries_id", id);
                 cmd.ExecuteNonQuery();
             }
             connection.Close();

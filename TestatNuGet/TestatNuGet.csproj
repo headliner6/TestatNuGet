@@ -73,6 +73,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Model\LogentriesModel.cs" />
+    <Compile Include="ViewModel\ConfirmButtonCommand.cs" />
     <Compile Include="ViewModel\LoadButtonCommand.cs" />
     <Compile Include="ViewModel\LogentriesViewModel.cs" />
     <Compile Include="View\TestatNuGetView.xaml.cs">
