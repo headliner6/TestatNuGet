@@ -33,11 +33,22 @@ namespace TestatNuGet.ViewModel
                             reader.GetString("Hostname"),
                             reader.GetInt32("Severity"),
                             reader.GetString("Timestamp"),
-                            reader.GetString("Message")
+                            reader.GetString("Message"),
+                            false //Confirmed
                             ));
                     }
                 }
             }
+        }
+
+        public void ConfirmLogentries()
+        {
+
+        }
+
+        public void AddMessage()
+        {
+
         }
     }
 }
