@@ -73,14 +73,15 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Model\LogentriesModel.cs" />
+    <Compile Include="ViewModel\AddButtonCommand.cs" />
     <Compile Include="ViewModel\ConfirmButtonCommand.cs" />
     <Compile Include="ViewModel\LoadButtonCommand.cs" />
     <Compile Include="ViewModel\LogentriesViewModel.cs" />
     <Compile Include="View\LogMessageAddView.xaml.cs">
       <DependentUpon>LogMessageAddView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\TestatNuGetView.xaml.cs">
-      <DependentUpon>TestatNuGetView.xaml</DependentUpon>
+    <Compile Include="View\LogentriesView.xaml.cs">
+      <DependentUpon>LogentriesView.xaml</DependentUpon>
     </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -98,7 +99,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\TestatNuGetView.xaml">
+    <Page Include="View\LogentriesView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

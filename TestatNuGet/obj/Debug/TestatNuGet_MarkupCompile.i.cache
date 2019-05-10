@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 D:\HF\Workspace\ProgrammingAdvanced\TestatNuGet\TestatNuGet\App.xaml
-3122420028
+32039771517
 
-15-1107059387
+161727852275
 24140770471
-MainWindow.xaml;View\LogMessageAddView.xaml;View\TestatNuGetView.xaml;
+MainWindow.xaml;View\LogMessageAddView.xaml;View\LogentriesView.xaml;
 
-False
+True
 

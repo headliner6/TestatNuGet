@@ -50,13 +50,11 @@ D:\HF\Workspace\ProgrammingAdvanced\TestatNuGet\TestatNuGet\bin\Debug\Google.Pro
 D:\HF\Workspace\ProgrammingAdvanced\TestatNuGet\TestatNuGet\bin\Debug\MySql.Data.xml
 D:\HF\Workspace\ProgrammingAdvanced\TestatNuGet\TestatNuGet\obj\Debug\TestatNuGet.csprojAssemblyReference.cache
 D:\HF\Workspace\ProgrammingAdvanced\TestatNuGet\TestatNuGet\obj\Debug\MainWindow.g.cs
-D:\HF\Workspace\ProgrammingAdvanced\TestatNuGet\TestatNuGet\obj\Debug\View\TestatNuGetView.g.cs
 D:\HF\Workspace\ProgrammingAdvanced\TestatNuGet\TestatNuGet\obj\Debug\App.g.cs
 D:\HF\Workspace\ProgrammingAdvanced\TestatNuGet\TestatNuGet\obj\Debug\GeneratedInternalTypeHelper.g.cs
 D:\HF\Workspace\ProgrammingAdvanced\TestatNuGet\TestatNuGet\obj\Debug\TestatNuGet_MarkupCompile.cache
 D:\HF\Workspace\ProgrammingAdvanced\TestatNuGet\TestatNuGet\obj\Debug\TestatNuGet_MarkupCompile.lref
 D:\HF\Workspace\ProgrammingAdvanced\TestatNuGet\TestatNuGet\obj\Debug\MainWindow.baml
-D:\HF\Workspace\ProgrammingAdvanced\TestatNuGet\TestatNuGet\obj\Debug\View\TestatNuGetView.baml
 D:\HF\Workspace\ProgrammingAdvanced\TestatNuGet\TestatNuGet\obj\Debug\TestatNuGet.g.resources
 D:\HF\Workspace\ProgrammingAdvanced\TestatNuGet\TestatNuGet\obj\Debug\TestatNuGet.Properties.Resources.resources
 D:\HF\Workspace\ProgrammingAdvanced\TestatNuGet\TestatNuGet\obj\Debug\TestatNuGet.csproj.GenerateResource.cache
@@ -66,3 +64,5 @@ D:\HF\Workspace\ProgrammingAdvanced\TestatNuGet\TestatNuGet\obj\Debug\TestatNuGe
 D:\HF\Workspace\ProgrammingAdvanced\TestatNuGet\TestatNuGet\obj\Debug\TestatNuGet.pdb
 D:\HF\Workspace\ProgrammingAdvanced\TestatNuGet\TestatNuGet\obj\Debug\View\LogMessageAddView.g.cs
 D:\HF\Workspace\ProgrammingAdvanced\TestatNuGet\TestatNuGet\obj\Debug\View\LogMessageAddView.baml
+D:\HF\Workspace\ProgrammingAdvanced\TestatNuGet\TestatNuGet\obj\Debug\View\LogentriesView.g.cs
+D:\HF\Workspace\ProgrammingAdvanced\TestatNuGet\TestatNuGet\obj\Debug\View\LogentriesView.baml

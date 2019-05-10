@@ -4,9 +4,9 @@ using TestatNuGet.ViewModel;
 
 namespace TestatNuGet.View
 {
-    public partial class TestatNuGetView : UserControl
+    public partial class LogentriesView : UserControl
     {
-        public TestatNuGetView()
+        public LogentriesView()
         {
             InitializeComponent();
         }

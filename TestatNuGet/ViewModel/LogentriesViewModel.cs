@@ -4,6 +4,7 @@ using TestatNuGet.Model;
 using MySql.Data.MySqlClient;
 using System.Data;
 using System.Windows.Input;
+using TestatNuGet.View;
 
 namespace TestatNuGet.ViewModel
 {
@@ -11,6 +12,7 @@ namespace TestatNuGet.ViewModel
     {
         private LoadButtonCommand _loadButtonCommand;
         private ConfirmButtonCommand _confirmButtonCommand;
+        private AddButtonCommand _addButtonCommand;
         public string ConnectionString { get; set; }
         public LogentriesModel SelectedDataGridRow { get; set; }
         public ObservableCollection<LogentriesModel> Logentries { get; set; }
@@ -25,9 +27,15 @@ namespace TestatNuGet.ViewModel
             get{return this._confirmButtonCommand;}
             set{this._confirmButtonCommand = value;}
         }
+        public AddButtonCommand AddButtonCommand
+        {
+            get { return this._addButtonCommand; }
+            set { this._addButtonCommand = value; }
+        }
 
         public LogentriesViewModel()
         {
+            _addButtonCommand = new AddButtonCommand(this);
             _loadButtonCommand = new LoadButtonCommand(this);
             _confirmButtonCommand = new ConfirmButtonCommand(this);
             Logentries = new ObservableCollection<LogentriesModel>();
@@ -89,6 +97,11 @@ namespace TestatNuGet.ViewModel
                 cmd.ExecuteNonQuery();
             }
             connection.Close();
+        }
+
+        public void ShowLogMessageAddView()
+        {
+            LogMessageAddView logMessageAddView = new LogMessageAddView();
         }
     }
 }
