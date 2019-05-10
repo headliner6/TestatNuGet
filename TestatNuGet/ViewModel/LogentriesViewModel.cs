@@ -5,17 +5,33 @@ using MySql.Data.MySqlClient;
 using System.Data;
 using System.Windows.Input;
 using TestatNuGet.View;
+using System.Runtime.CompilerServices;
+using System;
 
 namespace TestatNuGet.ViewModel
 {
-    public class LogentriesViewModel
+    public class LogentriesViewModel : INotifyPropertyChanged
     {
         private LoadButtonCommand _loadButtonCommand;
         private ConfirmButtonCommand _confirmButtonCommand;
         private AddButtonCommand _addButtonCommand;
+        private int _switchView;
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
         public string ConnectionString { get; set; }
         public LogentriesModel SelectedDataGridRow { get; set; }
         public ObservableCollection<LogentriesModel> Logentries { get; set; }
+
+        public int SwitchView
+        {
+            get { return this._switchView; }
+            set
+            {
+                this._switchView = value;
+                OnPropertyChanged("SwitchView");
+            }
+        }
         public LoadButtonCommand LoadButtonCommand
         {
             get{ return this._loadButtonCommand;}
@@ -35,6 +51,7 @@ namespace TestatNuGet.ViewModel
 
         public LogentriesViewModel()
         {
+            SwitchView = 0;
             _addButtonCommand = new AddButtonCommand(this);
             _loadButtonCommand = new LoadButtonCommand(this);
             _confirmButtonCommand = new ConfirmButtonCommand(this);
@@ -82,26 +99,17 @@ namespace TestatNuGet.ViewModel
             }
             connection.Close();
         }
-
-        public void AddMessage(string pod, string hostname, string level, string message)
-        {
-            var connection = new MySqlConnection(ConnectionString);
-            using (var cmd = connection.CreateCommand())
-            {
-                cmd.CommandText = "LogMessageAdd";
-                cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@Pod", pod);
-                cmd.Parameters.AddWithValue("@Hostname", hostname);
-                cmd.Parameters.AddWithValue("@Level", level);
-                cmd.Parameters.AddWithValue("@Logmessage", message);
-                cmd.ExecuteNonQuery();
-            }
-            connection.Close();
-        }
-
         public void ShowLogMessageAddView()
         {
-            LogMessageAddView logMessageAddView = new LogMessageAddView();
+            SwitchView = 1; //Switch to LogMessageAddView sorry for the magic number.
+        }
+
+        protected void OnPropertyChanged(string name)
+        {
+            if (PropertyChanged != null)
+            {
+                PropertyChanged(this, new PropertyChangedEventArgs(name));
+            }
         }
     }
 }

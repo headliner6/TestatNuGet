@@ -58,6 +58,7 @@
                         VerticalAlignment="Center"
                         Width="75" />
                 <Button x:Name="button_add"
+                        Command="{Binding AddButtonCommand}"
                         Grid.Row="1"
                         Grid.Column="0"
                         Grid.ColumnSpan="2"
