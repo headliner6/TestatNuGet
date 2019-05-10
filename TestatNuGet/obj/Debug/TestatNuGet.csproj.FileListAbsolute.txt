@@ -21,13 +21,11 @@ C:\Workspace\ProgrammingAdvanced\TestatNuGet\bin\Debug\TestatNuGet.exe
 C:\Workspace\ProgrammingAdvanced\TestatNuGet\bin\Debug\TestatNuGet.pdb
 C:\Workspace\ProgrammingAdvanced\TestatNuGet\obj\Debug\TestatNuGet.csprojAssemblyReference.cache
 C:\Workspace\ProgrammingAdvanced\TestatNuGet\obj\Debug\MainWindow.g.cs
-C:\Workspace\ProgrammingAdvanced\TestatNuGet\obj\Debug\View\TestatNuGetView.g.cs
 C:\Workspace\ProgrammingAdvanced\TestatNuGet\obj\Debug\App.g.cs
 C:\Workspace\ProgrammingAdvanced\TestatNuGet\obj\Debug\GeneratedInternalTypeHelper.g.cs
 C:\Workspace\ProgrammingAdvanced\TestatNuGet\obj\Debug\TestatNuGet_MarkupCompile.cache
 C:\Workspace\ProgrammingAdvanced\TestatNuGet\obj\Debug\TestatNuGet_MarkupCompile.lref
 C:\Workspace\ProgrammingAdvanced\TestatNuGet\obj\Debug\MainWindow.baml
-C:\Workspace\ProgrammingAdvanced\TestatNuGet\obj\Debug\View\TestatNuGetView.baml
 C:\Workspace\ProgrammingAdvanced\TestatNuGet\obj\Debug\TestatNuGet.g.resources
 C:\Workspace\ProgrammingAdvanced\TestatNuGet\obj\Debug\TestatNuGet.Properties.Resources.resources
 C:\Workspace\ProgrammingAdvanced\TestatNuGet\obj\Debug\TestatNuGet.csproj.GenerateResource.cache
@@ -66,3 +64,7 @@ D:\HF\Workspace\ProgrammingAdvanced\TestatNuGet\TestatNuGet\obj\Debug\View\LogMe
 D:\HF\Workspace\ProgrammingAdvanced\TestatNuGet\TestatNuGet\obj\Debug\View\LogMessageAddView.baml
 D:\HF\Workspace\ProgrammingAdvanced\TestatNuGet\TestatNuGet\obj\Debug\View\LogentriesView.g.cs
 D:\HF\Workspace\ProgrammingAdvanced\TestatNuGet\TestatNuGet\obj\Debug\View\LogentriesView.baml
+C:\Workspace\ProgrammingAdvanced\TestatNuGet\obj\Debug\View\LogMessageAddView.g.cs
+C:\Workspace\ProgrammingAdvanced\TestatNuGet\obj\Debug\View\LogentriesView.g.cs
+C:\Workspace\ProgrammingAdvanced\TestatNuGet\obj\Debug\View\LogMessageAddView.baml
+C:\Workspace\ProgrammingAdvanced\TestatNuGet\obj\Debug\View\LogentriesView.baml

@@ -8,6 +8,6 @@
         mc:Ignorable="d"
         Title="TestatNuGet" Height="450" Width="800">
     <Grid>
-        <views:LogentriesView x:Name="TestatNuGetViewControl"/>
+        <views:LogentriesView x:Name="LogentriesView"/>
     </Grid>
 </Window>
