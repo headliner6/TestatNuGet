@@ -5,12 +5,20 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Input;
+using static TestatNuGet.ViewModel.NavigationViewModel;
 
 namespace TestatNuGet.ViewModel
 {
     public class LogMessageAddViewModel
     {
-        public LogMessageAddViewModel() { }
+        private readonly Action<object> navigate;
+        public ICommand Navigate { get; set; }
+        public LogMessageAddViewModel(Action<object> navigate)
+        {
+            Navigate = new BaseCommand(OnNavigate);
+            this.navigate = navigate;
+        }
         public void AddMessage(string pod, string hostname, string level, string message)
         {
             var connection = new MySqlConnection("");
@@ -25,6 +33,10 @@ namespace TestatNuGet.ViewModel
                 cmd.ExecuteNonQuery();
             }
             connection.Close();
+        }
+        private void OnNavigate(object obj)
+        {
+            navigate.Invoke("LogentriesView");
         }
     }
 }

@@ -21,7 +21,7 @@ namespace TestatNuGet.ViewModel
         }
         public void Execute(object parameter)
         {
-            _logentriesViewModel.ShowLogMessageAddView();
+        
         }
     }
 }

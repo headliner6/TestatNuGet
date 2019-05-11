@@ -78,6 +78,7 @@
     <Compile Include="ViewModel\LoadButtonCommand.cs" />
     <Compile Include="ViewModel\LogentriesViewModel.cs" />
     <Compile Include="ViewModel\LogMessageAddViewModel.cs" />
+    <Compile Include="ViewModel\NavigationViewModel.cs" />
     <Compile Include="View\LogMessageAddView.xaml.cs">
       <DependentUpon>LogMessageAddView.xaml</DependentUpon>
     </Compile>

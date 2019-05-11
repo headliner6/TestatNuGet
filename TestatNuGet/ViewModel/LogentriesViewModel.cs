@@ -8,36 +8,25 @@ using TestatNuGet.View;
 using System.Runtime.CompilerServices;
 using System;
 using System.Windows;
+using static TestatNuGet.ViewModel.NavigationViewModel;
 
 namespace TestatNuGet.ViewModel
 {
-    public class LogentriesViewModel : INotifyPropertyChanged
+
+    public class LogentriesViewModel
     {
+        private readonly Action<object> navigate;
+        public ICommand Navigate { get; set; }
         private LoadButtonCommand _loadButtonCommand;
         private ConfirmButtonCommand _confirmButtonCommand;
         private AddButtonCommand _addButtonCommand;
-        private int _switchView;
-
-        public event PropertyChangedEventHandler PropertyChanged;
-
         public string ConnectionString { get; set; }
         public ObservableCollection<LogentriesModel> Logentries { get; set; }
-
-        public int SwitchView
-        {
-            get { return this._switchView; }
-            set
-            {
-                this._switchView = value;
-                OnPropertyChanged("SwitchView");
-            }
-        }
         public LoadButtonCommand LoadButtonCommand
         {
             get{ return this._loadButtonCommand;}
             set{this._loadButtonCommand = value;}
         }
-
         public ConfirmButtonCommand ConfirmButtonCommand
         {
             get{return this._confirmButtonCommand;}
@@ -48,17 +37,16 @@ namespace TestatNuGet.ViewModel
             get { return this._addButtonCommand; }
             set { this._addButtonCommand = value; }
         }
-
-        public LogentriesViewModel()
+        public LogentriesViewModel(Action<object> navigate)
         {
-            SwitchView = 0;
+            Navigate = new BaseCommand(OnNavigate);
+            this.navigate = navigate;
             _addButtonCommand = new AddButtonCommand(this);
             _loadButtonCommand = new LoadButtonCommand(this);
             _confirmButtonCommand = new ConfirmButtonCommand(this);
             Logentries = new ObservableCollection<LogentriesModel>();
             ConnectionString = "Server = localhost; Database = ; Uid = root; Pwd = ;";
         }
-
         public void LoadLogentries()
         {
             this.Logentries.Clear();
@@ -92,7 +80,6 @@ namespace TestatNuGet.ViewModel
                 MessageBox.Show("Es ist ein Fehler aufgetreten: " + ex.Message);
             }
         }
-
         public void ConfirmLogentries(int id)
         {
             var connection = new MySqlConnection(ConnectionString);
@@ -106,18 +93,11 @@ namespace TestatNuGet.ViewModel
             }
             connection.Close();
         }
-        public void ShowLogMessageAddView()
+        private void OnNavigate(object obj)
         {
-            SwitchView = 1; //Switch to LogMessageAddView sorry for the magic number.
+            navigate.Invoke("LogMessageAddView");
         }
 
-        protected void OnPropertyChanged(string name)
-        {
-            if (PropertyChanged != null)
-            {
-                PropertyChanged(this, new PropertyChangedEventArgs(name));
-            }
-        }
     }
 }
 

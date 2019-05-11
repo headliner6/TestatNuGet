@@ -88,6 +88,7 @@
                          Width="300"
                          Height="80"/>
             <Button x:Name="button_save"
+                        Command="{Binding Navigate}"
                         Grid.Row="3"
                         Grid.Column="3"
                         Content="Save"

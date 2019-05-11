@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using TestatNuGet.ViewModel;
 
 namespace TestatNuGet
 {
@@ -23,6 +24,7 @@ namespace TestatNuGet
         public MainWindow()
         {
             InitializeComponent();
+            this.DataContext = new NavigationViewModel();
         }
     }
 }
