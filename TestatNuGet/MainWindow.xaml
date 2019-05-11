@@ -24,7 +24,7 @@
                 <Style TargetType="{x:Type ContentControl}">
                     <Setter Property="ContentTemplate" Value="{StaticResource View1Template}" />
                     <Style.Triggers>
-                        <DataTrigger Binding="{Binding Path=SwitchView, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Value="1">
+                        <DataTrigger Binding="{Binding Path=SwitchView, UpdateSourceTrigger=PropertyChanged}" Value="1">
                             <Setter Property="ContentTemplate" Value="{StaticResource View2Template}" />
                         </DataTrigger>
                     </Style.Triggers>

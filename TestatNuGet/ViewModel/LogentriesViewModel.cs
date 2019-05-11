@@ -7,6 +7,7 @@ using System.Windows.Input;
 using TestatNuGet.View;
 using System.Runtime.CompilerServices;
 using System;
+using System.Windows;
 
 namespace TestatNuGet.ViewModel
 {
@@ -20,7 +21,6 @@ namespace TestatNuGet.ViewModel
         public event PropertyChangedEventHandler PropertyChanged;
 
         public string ConnectionString { get; set; }
-        public LogentriesModel SelectedDataGridRow { get; set; }
         public ObservableCollection<LogentriesModel> Logentries { get; set; }
 
         public int SwitchView
@@ -63,27 +63,34 @@ namespace TestatNuGet.ViewModel
         {
             this.Logentries.Clear();
             var connection = new MySqlConnection(ConnectionString);
-            connection.Open();
-            using (var cmd = connection.CreateCommand())
+            try
             {
-                cmd.CommandText = "SELECT id, pod, location, hostname, severity, timestamp, message FROM v_logentries";
-                using (var reader = cmd.ExecuteReader())
+                connection.Open();
+                using (var cmd = connection.CreateCommand())
                 {
-                    while (reader.Read())
+                    cmd.CommandText = "SELECT id, pod, location, hostname, severity, timestamp, message FROM v_logentries";
+                    using (var reader = cmd.ExecuteReader())
                     {
-                        Logentries.Add(new LogentriesModel(
-                            reader.GetInt32("Id"),
-                            reader.GetString("Pod"),
-                            reader.GetString("Location"),
-                            reader.GetString("Hostname"),
-                            reader.GetInt32("Severity"),
-                            reader.GetString("Timestamp"),
-                            reader.GetString("Message")
-                            ));
+                        while (reader.Read())
+                        {
+                            Logentries.Add(new LogentriesModel(
+                                reader.GetInt32("Id"),
+                                reader.GetString("Pod"),
+                                reader.GetString("Location"),
+                                reader.GetString("Hostname"),
+                                reader.GetInt32("Severity"),
+                                reader.GetString("Timestamp"),
+                                reader.GetString("Message")
+                                ));
+                        }
                     }
                 }
+                connection.Close();
             }
-            connection.Close();
+            catch (Exception ex)
+            {
+                MessageBox.Show("Es ist ein Fehler aufgetreten: " + ex.Message);
+            }
         }
 
         public void ConfirmLogentries(int id)

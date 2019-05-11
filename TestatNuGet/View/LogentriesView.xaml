@@ -49,7 +49,7 @@
                         Width="75"/>
                 <Button x:Name="button_confirm"
                         Command="{Binding ConfirmButtonCommand}"
-                        CommandParameter="{Binding SelectedDataGridRow}"
+                        CommandParameter="{Binding ElementName=logentrie_dataGrid, Path=SelectedItem}"
                         Grid.Row="1"
                         Grid.Column="0"
                         Grid.ColumnSpan="2"
@@ -71,7 +71,6 @@
         <GroupBox Header="Data" Grid.Row="1">
             <DataGrid x:Name="logentrie_dataGrid"
                       ItemsSource="{Binding Path=Logentries, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
-                      SelectedItem="{Binding Path=SelectedDataGridRow, Mode=TwoWay}"
                       HorizontalAlignment="stretch"
                       Grid.Row="1"
                       VerticalScrollBarVisibility="auto"

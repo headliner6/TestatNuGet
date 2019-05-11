@@ -22,9 +22,13 @@ namespace TestatNuGet.ViewModel
         }
         public void Execute(object parameter)
         {
-            LogentriesModel lm = (LogentriesModel)parameter;
-            _logentriesViewModel.ConfirmLogentries(lm.Id);
-            _logentriesViewModel.LoadLogentries();
+            if (parameter != null)
+            {
+                LogentriesModel lm = (LogentriesModel)parameter;
+                _logentriesViewModel.ConfirmLogentries(lm.Id);
+                _logentriesViewModel.LoadLogentries();
+            }
+
         }
     }
 }
