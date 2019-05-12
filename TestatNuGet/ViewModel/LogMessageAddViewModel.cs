@@ -5,8 +5,10 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 using System.Windows.Input;
 using static TestatNuGet.ViewModel.NavigationViewModel;
+using TestatNuGet.ViewModel;
 
 namespace TestatNuGet.ViewModel
 {
@@ -14,28 +16,44 @@ namespace TestatNuGet.ViewModel
     {
         private readonly Action<object> navigate;
         public ICommand Navigate { get; set; }
+        public string POD{ get; set; }
+        public string Location { get; set; }
+        public string Hostname { get; set; }
+        public int Severity { get; set; }
+        public string Message { get; set; }
+        public string ConnectionString { get; set; }
+
         public LogMessageAddViewModel(Action<object> navigate)
         {
             Navigate = new BaseCommand(OnNavigate);
             this.navigate = navigate;
         }
-        public void AddMessage(string pod, string hostname, string level, string message)
+        public void AddMessage()
         {
-            var connection = new MySqlConnection("");
-            using (var cmd = connection.CreateCommand())
-            {
-                cmd.CommandText = "LogMessageAdd";
-                cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@Pod", pod);
-                cmd.Parameters.AddWithValue("@Hostname", hostname);
-                cmd.Parameters.AddWithValue("@Level", level);
-                cmd.Parameters.AddWithValue("@Logmessage", message);
-                cmd.ExecuteNonQuery();
+            var connection = new MySqlConnection(ConnectionString); //"Server = localhost; Database = inventarisierungsloesung; Uid = root; Pwd = password;"
+            try {
+                connection.Open();
+                using (var cmd = connection.CreateCommand())
+                {
+                    cmd.CommandText = "LogMessageAdd";
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Parameters.AddWithValue("@i_pod", POD);
+                    cmd.Parameters.AddWithValue("@i_location", Location);
+                    cmd.Parameters.AddWithValue("@i_hostname", Hostname);
+                    cmd.Parameters.AddWithValue("@i_severity", Severity);
+                    cmd.Parameters.AddWithValue("@i_message", Message);
+                    cmd.ExecuteNonQuery();
+                }
+                connection.Close();
             }
-            connection.Close();
+            catch (Exception ex)
+            {
+                MessageBox.Show("Es ist ein Fehler aufgetreten: " + ex.Message);
+            }
         }
         private void OnNavigate(object obj)
         {
+            AddMessage();
             navigate.Invoke("LogentriesView");
         }
     }

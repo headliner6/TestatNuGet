@@ -20,20 +20,25 @@ namespace TestatNuGet.ViewModel
         }
         public NavigationViewModel()
         {
-            SelectedViewModel = new LogentriesViewModel(OpenLogentriesView);
-        }
-        private void OpenLogentriesView(object obj)
-        {
-            if (obj.ToString() == "LogMessageAddView")
-            {
-                SelectedViewModel = new LogMessageAddViewModel(OpenLogMessageAddView);
-            }
+            SelectedViewModel = new LogentriesViewModel(OpenLogMessageAddView);
         }
         private void OpenLogMessageAddView(object obj)
         {
+            if (obj.ToString() == "LogMessageAddView")
+            {
+                LogentriesViewModel lvm = (LogentriesViewModel)selectedViewModel;
+                SelectedViewModel = new LogMessageAddViewModel(OpenLogentriesView);
+                LogMessageAddViewModel lmavm = (LogMessageAddViewModel)selectedViewModel;
+                lmavm.ConnectionString = lvm.ConnectionString;
+            }
+        }
+        private void OpenLogentriesView(object obj)
+        {
             if (obj.ToString() == "LogentriesView")
             {
-                SelectedViewModel = new LogentriesViewModel(OpenLogentriesView);
+                SelectedViewModel = new LogentriesViewModel(OpenLogMessageAddView);
+                LogentriesViewModel lvm = (LogentriesViewModel)selectedViewModel;
+                lvm.LoadLogentries();
             }
         }
         public event PropertyChangedEventHandler PropertyChanged;

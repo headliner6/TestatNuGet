@@ -243,14 +243,14 @@ DELIMITER ;
 DELIMITER //
 CREATE PROCEDURE LogMessageAdd
 (
-	IN i_pod VARCHAR(1000), i_hostname VARCHAR(45), i_severity INT, i_message VARCHAR(1000)
+	IN i_pod VARCHAR(1000),i_location VARCHAR(45), i_hostname VARCHAR(45), i_severity INT, i_message VARCHAR(1000)
 )
 
 BEGIN
 
-	INSERT INTO v_logentries ( pod, timestamp, hostname, severity, message)
+	INSERT INTO v_logentries ( pod, location, timestamp, hostname, severity, message)
     VALUE
-    (i_pod, timestamp(now()), i_hostname, i_severity, i_message);
+    (i_pod, i_location, timestamp(now()), i_hostname, i_severity, i_message);
     
 END //
 DELIMITER ;

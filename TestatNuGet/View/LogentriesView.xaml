@@ -45,7 +45,7 @@
                         Width="75"/>
                 <Button x:Name="button_confirm"
                         Command="{Binding ConfirmButtonCommand}"
-                        CommandParameter="{Binding ElementName=logentrie_dataGrid, Path=SelectedItem}"
+                        CommandParameter="{Binding ElementName=logentrie_dataGrid, Path=SelectedItems}"
                         Grid.Row="1"
                         Grid.Column="0"
                         Grid.ColumnSpan="2"

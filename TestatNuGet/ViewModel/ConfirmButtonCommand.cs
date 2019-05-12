@@ -24,11 +24,14 @@ namespace TestatNuGet.ViewModel
         {
             if (parameter != null)
             {
-                LogentriesModel lm = (LogentriesModel)parameter;
-                _logentriesViewModel.ConfirmLogentries(lm.Id);
-                _logentriesViewModel.LoadLogentries();
+                System.Collections.IList items = (System.Collections.IList)parameter;
+                var collection = items.Cast<LogentriesModel>().ToList();
+                foreach (var lm in collection)
+                {
+                    _logentriesViewModel.ConfirmLogentries(lm.Id);
+                    _logentriesViewModel.LoadLogentries();
+                }
             }
-
         }
     }
 }

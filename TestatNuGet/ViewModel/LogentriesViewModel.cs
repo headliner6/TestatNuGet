@@ -16,12 +16,13 @@ namespace TestatNuGet.ViewModel
     public class LogentriesViewModel
     {
         private readonly Action<object> navigate;
-        public ICommand Navigate { get; set; }
         private LoadButtonCommand _loadButtonCommand;
         private ConfirmButtonCommand _confirmButtonCommand;
         private AddButtonCommand _addButtonCommand;
-        public string ConnectionString { get; set; }
+
+        public ICommand Navigate { get; set; }
         public ObservableCollection<LogentriesModel> Logentries { get; set; }
+        public string ConnectionString { get; set; }
         public LoadButtonCommand LoadButtonCommand
         {
             get{ return this._loadButtonCommand;}
@@ -45,7 +46,7 @@ namespace TestatNuGet.ViewModel
             _loadButtonCommand = new LoadButtonCommand(this);
             _confirmButtonCommand = new ConfirmButtonCommand(this);
             Logentries = new ObservableCollection<LogentriesModel>();
-            ConnectionString = "Server = localhost; Database = ; Uid = root; Pwd = ;";
+            ConnectionString = "Server = localhost; Database = inventarisierungsloesung; Uid = root; Pwd = password;"; //Server = localhost; Database = ; Uid = root; Pwd = ;
         }
         public void LoadLogentries()
         {
