@@ -71,7 +71,7 @@ namespace TestatNuGet.ViewModel
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Es ist ein Fehler aufgetreten: " + ex.Message);
+                MessageBox.Show("Folgender Fehler ist aufgetreten: " + ex.Message);
             }
         }
         public void ConfirmLogentries(int id)
@@ -91,7 +91,7 @@ namespace TestatNuGet.ViewModel
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Es ist ein Fehler aufgetreten: " + ex.Message);
+                MessageBox.Show("Folgender Fehler ist aufgetreten: " + ex.Message);
             }
         }
         private void OnNavigate(object obj)

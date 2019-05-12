@@ -51,8 +51,6 @@ namespace TestatNuGet.ViewModel
                 PropertyChanged(this, new PropertyChangedEventArgs(propName));
             }
         }
-
-
         public class BaseCommand : ICommand
         {
             private Predicate<object> _canExecute;
@@ -63,23 +61,19 @@ namespace TestatNuGet.ViewModel
                 : this(method, null)
             {
             }
-
             public BaseCommand(Action<object> method, Predicate<object> canExecute)
             {
                 _method = method;
                 _canExecute = canExecute;
             }
-
             public bool CanExecute(object parameter)
             {
                 if (_canExecute == null)
                 {
                     return true;
                 }
-
                 return _canExecute(parameter);
             }
-
             public void Execute(object parameter)
             {
                 _method.Invoke(parameter);
