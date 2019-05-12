@@ -24,9 +24,9 @@ namespace TestatNuGet.ViewModel
         {
             if (parameter != null)
             {
-                System.Collections.IList items = (System.Collections.IList)parameter;
-                var collection = items.Cast<LogentriesModel>().ToList();
-                foreach (var lm in collection)
+                System.Collections.IList sellectedItems = (System.Collections.IList)parameter;
+                var sellectedItemscollection = sellectedItems.Cast<LogentriesModel>().ToList();
+                foreach (var lm in sellectedItemscollection)
                 {
                     _logentriesViewModel.ConfirmLogentries(lm.Id);
                     _logentriesViewModel.LoadLogentries();

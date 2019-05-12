@@ -18,7 +18,6 @@ namespace TestatNuGet.ViewModel
         private readonly Action<object> navigate;
         private LoadButtonCommand _loadButtonCommand;
         private ConfirmButtonCommand _confirmButtonCommand;
-        private AddButtonCommand _addButtonCommand;
 
         public ICommand Navigate { get; set; }
         public ObservableCollection<LogentriesModel> Logentries { get; set; }
@@ -33,16 +32,10 @@ namespace TestatNuGet.ViewModel
             get{return this._confirmButtonCommand;}
             set{this._confirmButtonCommand = value;}
         }
-        public AddButtonCommand AddButtonCommand
-        {
-            get { return this._addButtonCommand; }
-            set { this._addButtonCommand = value; }
-        }
         public LogentriesViewModel(Action<object> navigate)
         {
             Navigate = new BaseCommand(OnNavigate);
             this.navigate = navigate;
-            _addButtonCommand = new AddButtonCommand(this);
             _loadButtonCommand = new LoadButtonCommand(this);
             _confirmButtonCommand = new ConfirmButtonCommand(this);
             Logentries = new ObservableCollection<LogentriesModel>();
