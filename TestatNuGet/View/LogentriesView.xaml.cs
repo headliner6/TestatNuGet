@@ -1,6 +1,4 @@
-﻿using System.Windows;
-using System.Windows.Controls;
-using TestatNuGet.ViewModel;
+﻿using System.Windows.Controls;
 
 namespace TestatNuGet.View
 {
