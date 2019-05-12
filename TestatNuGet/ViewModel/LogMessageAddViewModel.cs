@@ -27,7 +27,7 @@ namespace TestatNuGet.ViewModel
         {
             Navigate = new BaseCommand(OnNavigate);
             this.navigate = navigate;
-        }
+       }
         public void AddMessage()
         {
             var connection = new MySqlConnection(ConnectionString); //"Server = localhost; Database = inventarisierungsloesung; Uid = root; Pwd = password;"
