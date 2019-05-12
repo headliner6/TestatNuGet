@@ -100,6 +100,15 @@
                     HorizontalAlignment="Right"
                     VerticalAlignment="Center"
                     Width="75"/>
+            <Button x:Name="button_back"
+                    Command="{Binding NavigateBack}"
+                    Grid.Row="3"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="2"
+                    Content="Back"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Center"
+                    Width="75"/>
         </Grid>
     </GroupBox>
 </UserControl>

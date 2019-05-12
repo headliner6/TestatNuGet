@@ -16,6 +16,7 @@ namespace TestatNuGet.ViewModel
     {
         private readonly Action<object> navigate;
         public ICommand Navigate { get; set; }
+        public ICommand NavigateBack { get; set; }
         public string POD{ get; set; }
         public string Location { get; set; }
         public string Hostname { get; set; }
@@ -25,6 +26,7 @@ namespace TestatNuGet.ViewModel
 
         public LogMessageAddViewModel(Action<object> navigate)
         {
+            NavigateBack = new BaseCommand(OnNavigateBack);
             Navigate = new BaseCommand(OnNavigate);
             this.navigate = navigate;
        }
@@ -55,6 +57,10 @@ namespace TestatNuGet.ViewModel
         private void OnNavigate(object obj)
         {
             AddMessage();
+            navigate.Invoke("LogentriesView");
+        }
+        private void OnNavigateBack(object obj)
+        {
             navigate.Invoke("LogentriesView");
         }
     }
