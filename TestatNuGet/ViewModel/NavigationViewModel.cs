@@ -36,8 +36,10 @@ namespace TestatNuGet.ViewModel
         {
             if (obj.ToString() == "LogentriesView")
             {
+                LogMessageAddViewModel lmavm = (LogMessageAddViewModel)selectedViewModel;
                 SelectedViewModel = new LogentriesViewModel(OpenLogMessageAddView);
                 LogentriesViewModel lvm = (LogentriesViewModel)selectedViewModel;
+                lvm.ConnectionString = lmavm.ConnectionString;
                 lvm.LoadLogentries();
             }
         }

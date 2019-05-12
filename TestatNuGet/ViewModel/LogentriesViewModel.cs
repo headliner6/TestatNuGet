@@ -46,7 +46,7 @@ namespace TestatNuGet.ViewModel
             _loadButtonCommand = new LoadButtonCommand(this);
             _confirmButtonCommand = new ConfirmButtonCommand(this);
             Logentries = new ObservableCollection<LogentriesModel>();
-            ConnectionString = "Server = localhost; Database = inventarisierungsloesung; Uid = root; Pwd = password;"; //Server = localhost; Database = ; Uid = root; Pwd = ;
+            ConnectionString = "Server = localhost; Database = ; Uid = root; Pwd = ;";
         }
         public void LoadLogentries()
         {
@@ -84,15 +84,22 @@ namespace TestatNuGet.ViewModel
         public void ConfirmLogentries(int id)
         {
             var connection = new MySqlConnection(ConnectionString);
-            connection.Open();
-            using (var cmd = connection.CreateCommand())
-            {
-                cmd.CommandText = "LogClear";
-                cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@_logentries_id", id);
-                cmd.ExecuteNonQuery();
+            try
+            { 
+                connection.Open();
+                using (var cmd = connection.CreateCommand())
+                {
+                    cmd.CommandText = "LogClear";
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Parameters.AddWithValue("@_logentries_id", id);
+                    cmd.ExecuteNonQuery();
+                }
+                connection.Close();
             }
-            connection.Close();
+            catch (Exception ex)
+            {
+                MessageBox.Show("Es ist ein Fehler aufgetreten: " + ex.Message);
+            }
         }
         private void OnNavigate(object obj)
         {

@@ -30,8 +30,9 @@ namespace TestatNuGet.ViewModel
        }
         public void AddMessage()
         {
-            var connection = new MySqlConnection(ConnectionString); //"Server = localhost; Database = inventarisierungsloesung; Uid = root; Pwd = password;"
-            try {
+            var connection = new MySqlConnection(ConnectionString);
+            try
+            {
                 connection.Open();
                 using (var cmd = connection.CreateCommand())
                 {
