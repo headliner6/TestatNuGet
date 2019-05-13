@@ -17,7 +17,7 @@ namespace TestatNuGet.ViewModel
         private readonly Action<object> navigate;
         public ICommand Navigate { get; set; }
         public ICommand NavigateBack { get; set; }
-        public string POD{ get; set; }
+        public string POD { set; get; }
         public string Location { get; set; }
         public string Hostname { get; set; }
         public int Severity { get; set; }
