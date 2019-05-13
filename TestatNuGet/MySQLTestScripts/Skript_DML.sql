@@ -1,4 +1,4 @@
-USE inventarisierungsloesung;
+ USE inventarisierungsloesung;
 
 INSERT INTO town(zip, town)
 VALUES
