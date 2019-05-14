@@ -24,8 +24,6 @@ C:\Workspace\ProgrammingAdvanced\TestatNuGet\obj\Release\TestatNuGet.csproj.Core
 C:\Workspace\ProgrammingAdvanced\TestatNuGet\obj\Release\TestatNuGet.csproj.CopyComplete
 C:\Workspace\ProgrammingAdvanced\TestatNuGet\obj\Release\TestatNuGet.exe
 C:\Workspace\ProgrammingAdvanced\TestatNuGet\obj\Release\TestatNuGet.pdb
-D:\HF\Workspace\ProgrammingAdvanced\TestatNuGet\TestatNuGet\bin\Release\TestatNuGet.exe.config
-D:\HF\Workspace\ProgrammingAdvanced\TestatNuGet\TestatNuGet\bin\Release\TestatNuGet.exe
 D:\HF\Workspace\ProgrammingAdvanced\TestatNuGet\TestatNuGet\bin\Release\TestatNuGet.pdb
 D:\HF\Workspace\ProgrammingAdvanced\TestatNuGet\TestatNuGet\bin\Release\BouncyCastle.Crypto.dll
 D:\HF\Workspace\ProgrammingAdvanced\TestatNuGet\TestatNuGet\bin\Release\Google.Protobuf.dll
@@ -37,7 +35,6 @@ D:\HF\Workspace\ProgrammingAdvanced\TestatNuGet\TestatNuGet\obj\Release\View\Log
 D:\HF\Workspace\ProgrammingAdvanced\TestatNuGet\TestatNuGet\obj\Release\MainWindow.g.cs
 D:\HF\Workspace\ProgrammingAdvanced\TestatNuGet\TestatNuGet\obj\Release\View\LogMessageAddView.g.cs
 D:\HF\Workspace\ProgrammingAdvanced\TestatNuGet\TestatNuGet\obj\Release\View\LogentriesView.g.cs
-D:\HF\Workspace\ProgrammingAdvanced\TestatNuGet\TestatNuGet\obj\Release\App.g.cs
 D:\HF\Workspace\ProgrammingAdvanced\TestatNuGet\TestatNuGet\obj\Release\GeneratedInternalTypeHelper.g.cs
 D:\HF\Workspace\ProgrammingAdvanced\TestatNuGet\TestatNuGet\obj\Release\TestatNuGet_MarkupCompile.cache
 D:\HF\Workspace\ProgrammingAdvanced\TestatNuGet\TestatNuGet\obj\Release\TestatNuGet_MarkupCompile.lref
@@ -48,7 +45,9 @@ D:\HF\Workspace\ProgrammingAdvanced\TestatNuGet\TestatNuGet\obj\Release\TestatNu
 D:\HF\Workspace\ProgrammingAdvanced\TestatNuGet\TestatNuGet\obj\Release\TestatNuGet.csproj.GenerateResource.cache
 D:\HF\Workspace\ProgrammingAdvanced\TestatNuGet\TestatNuGet\obj\Release\TestatNuGet.csproj.CoreCompileInputs.cache
 D:\HF\Workspace\ProgrammingAdvanced\TestatNuGet\TestatNuGet\obj\Release\TestatNuGet.csproj.CopyComplete
-D:\HF\Workspace\ProgrammingAdvanced\TestatNuGet\TestatNuGet\obj\Release\TestatNuGet.exe
 D:\HF\Workspace\ProgrammingAdvanced\TestatNuGet\TestatNuGet\obj\Release\TestatNuGet.pdb
 D:\HF\Workspace\ProgrammingAdvanced\TestatNuGet\TestatNuGet\obj\Release\View\NavigationView.g.cs
 D:\HF\Workspace\ProgrammingAdvanced\TestatNuGet\TestatNuGet\obj\Release\View\NavigationView.baml
+D:\HF\Workspace\ProgrammingAdvanced\TestatNuGet\TestatNuGet\bin\Release\TestatNuGet.dll.config
+D:\HF\Workspace\ProgrammingAdvanced\TestatNuGet\TestatNuGet\bin\Release\TestatNuGet.dll
+D:\HF\Workspace\ProgrammingAdvanced\TestatNuGet\TestatNuGet\obj\Release\TestatNuGet.dll

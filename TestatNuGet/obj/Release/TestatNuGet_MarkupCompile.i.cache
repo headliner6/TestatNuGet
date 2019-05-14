@@ -9,12 +9,12 @@ TestatNuGet
 none
 false
 TRACE
-D:\HF\Workspace\ProgrammingAdvanced\TestatNuGet\TestatNuGet\App.xaml
+
 41157761078
 
 18-180127054
 24140770471
 MainWindow.xaml;View\LogMessageAddView.xaml;View\LogentriesView.xaml;View\NavigationView.xaml;
 
-False
+True
 

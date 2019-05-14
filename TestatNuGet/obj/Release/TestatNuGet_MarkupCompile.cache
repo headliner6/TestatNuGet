@@ -1,7 +1,7 @@
 ﻿TestatNuGet
 
 
-winexe
+library
 C#
 .cs
 D:\HF\Workspace\ProgrammingAdvanced\TestatNuGet\TestatNuGet\obj\Release\
@@ -9,7 +9,7 @@ TestatNuGet
 none
 false
 TRACE
-D:\HF\Workspace\ProgrammingAdvanced\TestatNuGet\TestatNuGet\App.xaml
+
 41157761078
 
 141756399200
