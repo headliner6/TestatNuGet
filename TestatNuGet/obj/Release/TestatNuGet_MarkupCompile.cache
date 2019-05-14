@@ -1,19 +1,19 @@
 ﻿TestatNuGet
 
 
-library
+winexe
 C#
 .cs
-D:\HF\Workspace\ProgrammingAdvanced\TestatNuGet\TestatNuGet\obj\Release\
+C:\Workspace\ProgrammingAdvanced\TestatNuGet\obj\Release\
 TestatNuGet
 none
 false
 TRACE
-
+C:\Workspace\ProgrammingAdvanced\TestatNuGet\App.xaml
 41157761078
 
 141756399200
-24140770471
+242095860800
 MainWindow.xaml;View\LogMessageAddView.xaml;View\LogentriesView.xaml;View\NavigationView.xaml;
 
 False

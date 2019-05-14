@@ -51,3 +51,5 @@ D:\HF\Workspace\ProgrammingAdvanced\TestatNuGet\TestatNuGet\obj\Release\View\Nav
 D:\HF\Workspace\ProgrammingAdvanced\TestatNuGet\TestatNuGet\bin\Release\TestatNuGet.dll.config
 D:\HF\Workspace\ProgrammingAdvanced\TestatNuGet\TestatNuGet\bin\Release\TestatNuGet.dll
 D:\HF\Workspace\ProgrammingAdvanced\TestatNuGet\TestatNuGet\obj\Release\TestatNuGet.dll
+C:\Workspace\ProgrammingAdvanced\TestatNuGet\obj\Release\View\NavigationView.g.cs
+C:\Workspace\ProgrammingAdvanced\TestatNuGet\obj\Release\View\NavigationView.baml

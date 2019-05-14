@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-D:\HF\Workspace\ProgrammingAdvanced\TestatNuGet\TestatNuGet\obj\Debug\
+C:\Workspace\ProgrammingAdvanced\TestatNuGet\obj\Debug\
 TestatNuGet
 none
 false
 DEBUG;TRACE
-D:\HF\Workspace\ProgrammingAdvanced\TestatNuGet\TestatNuGet\App.xaml
+C:\Workspace\ProgrammingAdvanced\TestatNuGet\App.xaml
 41157761078
 
-141756399200
-24140770471
+152032745676
+1301286012137
 MainWindow.xaml;View\LogMessageAddView.xaml;View\LogentriesView.xaml;View\NavigationView.xaml;
 
 False
