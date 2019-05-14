@@ -58,7 +58,7 @@ namespace TestatNuGet.ViewModel
                             Logentries.Add(new LogentriesModel(
                                 reader.GetInt32("Id"),
                                 reader.GetString("Pod"),
-                                reader.GetString("Location"),
+                                reader.GetValue(reader.GetOrdinal("Location")) as string,
                                 reader.GetString("Hostname"),
                                 reader.GetInt32("Severity"),
                                 reader.GetString("Timestamp"),
