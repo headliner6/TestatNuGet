@@ -8,7 +8,6 @@ namespace TestatNuGet
         public MainWindow()
         {
             InitializeComponent();
-            this.DataContext = new NavigationViewModel();
         }
     }
 }

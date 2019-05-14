@@ -15,7 +15,6 @@ namespace TestatNuGet.ViewModel
         public ICommand Navigate { get; set; }
         public ICommand NavigateBack { get; set; }
         public string POD { set; get; }
-        public string Location { get; set; }
         public string Hostname { get; set; }
         public string Severity { get; set; }
         public string Message { get; set; }
@@ -32,10 +31,6 @@ namespace TestatNuGet.ViewModel
             if (string.IsNullOrEmpty(POD))
             {
                 MessageBox.Show("POD darf nicht leer sein!");
-            }
-            else if (string.IsNullOrEmpty(Location))
-            {
-                MessageBox.Show("Location darf nicht leer sein!");
             }
             else if (string.IsNullOrEmpty(Hostname))
             {
@@ -66,7 +61,6 @@ namespace TestatNuGet.ViewModel
                         cmd.CommandText = "LogMessageAdd";
                         cmd.CommandType = CommandType.StoredProcedure;
                         cmd.Parameters.AddWithValue("@i_pod", POD);
-                        cmd.Parameters.AddWithValue("@i_location", Location);
                         cmd.Parameters.AddWithValue("@i_hostname", Hostname);
                         cmd.Parameters.AddWithValue("@i_severity", Severity);
                         cmd.Parameters.AddWithValue("@i_message", Message);

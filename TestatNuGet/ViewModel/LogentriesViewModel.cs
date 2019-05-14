@@ -21,7 +21,7 @@ namespace TestatNuGet.ViewModel
 
         public ICommand Navigate { get; set; }
         public ObservableCollection<LogentriesModel> Logentries { get; set; }
-        public string ConnectionString { get; set; }
+        public string ConnectionString { get; set; } // Server = localhost; Database = inventarisierungsloesung; Uid = root; Pwd = password;
         public LoadButtonCommand LoadButtonCommand
         {
             get{ return this._loadButtonCommand;}
@@ -98,7 +98,6 @@ namespace TestatNuGet.ViewModel
         {
             navigate.Invoke("LogMessageAddView");
         }
-
     }
 }
 
