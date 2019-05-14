@@ -1,11 +1,8 @@
 ﻿using System.Collections.ObjectModel;
-using System.ComponentModel;
 using TestatNuGet.Model;
 using MySql.Data.MySqlClient;
 using System.Data;
 using System.Windows.Input;
-using TestatNuGet.View;
-using System.Runtime.CompilerServices;
 using System;
 using System.Windows;
 using static TestatNuGet.ViewModel.NavigationViewModel;
@@ -21,7 +18,7 @@ namespace TestatNuGet.ViewModel
 
         public ICommand Navigate { get; set; }
         public ObservableCollection<LogentriesModel> Logentries { get; set; }
-        public string ConnectionString { get; set; } // Server = localhost; Database = inventarisierungsloesung; Uid = root; Pwd = password;
+        public string ConnectionString { get; set; }
         public LoadButtonCommand LoadButtonCommand
         {
             get{ return this._loadButtonCommand;}

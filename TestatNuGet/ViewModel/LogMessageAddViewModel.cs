@@ -32,10 +32,6 @@ namespace TestatNuGet.ViewModel
             {
                 MessageBox.Show("POD darf nicht leer sein!");
             }
-            else if (string.IsNullOrEmpty(Hostname))
-            {
-                MessageBox.Show("Hostname darf nicht leer sein!");
-            }
             else if (string.IsNullOrEmpty(Severity))
             {
                 MessageBox.Show("Severity darf nicht leer sein!");
@@ -44,6 +40,10 @@ namespace TestatNuGet.ViewModel
             {
                 MessageBox.Show("Severity darf nur Zahlen enthalten!");
                 Severity = Severity.Remove(Severity.Length - 1);
+            }
+            else if (string.IsNullOrEmpty(Hostname))
+            {
+                MessageBox.Show("Hostname darf nicht leer sein!");
             }
             else if (string.IsNullOrEmpty(Message))
             {
