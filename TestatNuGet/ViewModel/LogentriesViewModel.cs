@@ -6,7 +6,6 @@ using System.Windows.Input;
 using System;
 using System.Windows;
 using static TestatNuGet.ViewModel.NavigationViewModel;
-using DuplicateCheckerLib;
 
 namespace TestatNuGet.ViewModel
 {
@@ -16,13 +15,10 @@ namespace TestatNuGet.ViewModel
         private readonly Action<object> navigate;
         private LoadButtonCommand _loadButtonCommand;
         private ConfirmButtonCommand _confirmButtonCommand;
-        private FindDuplicatesButtonCommand _findDuplicatesButtonCommand;
-        private DuplicateChecker _duplicateChecker;
 
         public ICommand Navigate { get; set; }
         public ObservableCollection<LogentriesModel> Logentries { get; set; }
-        public ObservableCollection<LogentriesModel> DuplicateLogentries { get; set; }
-        public string ConnectionString { get; set; } // Server = localhost; Database = inventarisierungsloesung; Uid = root; Pwd = password;
+        public string ConnectionString { get; set; }
         public LoadButtonCommand LoadButtonCommand
         {
             get{ return this._loadButtonCommand;}
@@ -33,25 +29,14 @@ namespace TestatNuGet.ViewModel
             get{return this._confirmButtonCommand;}
             set{this._confirmButtonCommand = value;}
         }
-        public FindDuplicatesButtonCommand FindDuplicatesButtonCommand
-        {
-            get { return this._findDuplicatesButtonCommand; }
-            set { this._findDuplicatesButtonCommand = value; }
-        }
-
         public LogentriesViewModel(Action<object> navigate)
         {
             Navigate = new BaseCommand(OnNavigate);
             this.navigate = navigate;
-
-            ConnectionString = "Server = localhost; Database = ; Uid = root; Pwd = ;";
-
             _loadButtonCommand = new LoadButtonCommand(this);
             _confirmButtonCommand = new ConfirmButtonCommand(this);
             Logentries = new ObservableCollection<LogentriesModel>();
-            DuplicateLogentries = new ObservableCollection<LogentriesModel>();
-            _duplicateChecker = new DuplicateChecker();
-            _findDuplicatesButtonCommand = new FindDuplicatesButtonCommand(this);
+            ConnectionString = "Server = localhost; Database = ; Uid = root; Pwd = ;";
         }
         public void LoadLogentries()
         {
@@ -105,10 +90,6 @@ namespace TestatNuGet.ViewModel
             {
                 MessageBox.Show("Folgender Fehler ist aufgetreten: " + ex.Message);
             }
-        }
-        public void CheckForDuplicates()
-        {
-            var dc = _duplicateChecker.FindDuplicates(Logentries);
         }
         private void OnNavigate(object obj)
         {

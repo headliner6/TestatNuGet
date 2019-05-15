@@ -1,5 +1,4 @@
-﻿using DuplicateCheckerLib;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TestatNuGet.Model
 {
-    public class LogentriesModel : IEntity
+    public class LogentriesModel
     {
         public int Id { get; set; }
         public string Pod { get; set; }
@@ -27,7 +26,5 @@ namespace TestatNuGet.Model
             this.Timestamp = timestamp;
             this.Message = message;
         }
-
-        //toDo Equals() und GetHashCode()
     }
 }

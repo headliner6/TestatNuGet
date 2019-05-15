@@ -96,103 +96,31 @@ D:\HF\Workspace\ProgrammingAdvanced\TestatNuGet\TestatNuGet\obj\Debug\TestatNuGe
 D:\HF\Workspace\ProgrammingAdvanced\TestatNuGet\TestatNuGet\obj\Debug\TestatNuGet.pdb
 D:\HF\Workspace\ProgrammingAdvanced\TestatNuGet\TestatNuGet\obj\Debug\View\NavigationView.g.cs
 D:\HF\Workspace\ProgrammingAdvanced\TestatNuGet\TestatNuGet\obj\Debug\View\NavigationView.baml
-C:\Workspace\ProgrammingAdvanced\TestatNuGet\obj\Debug\View\NavigationView.g.cs
-C:\Workspace\ProgrammingAdvanced\TestatNuGet\obj\Debug\View\NavigationView.baml
-C:\Workspace\ProgrammingAdvanced\TestatNuGet\bin\Debug\Microsoft.Win32.Primitives.dll
-C:\Workspace\ProgrammingAdvanced\TestatNuGet\bin\Debug\netstandard.dll
-C:\Workspace\ProgrammingAdvanced\TestatNuGet\bin\Debug\System.AppContext.dll
-C:\Workspace\ProgrammingAdvanced\TestatNuGet\bin\Debug\System.Collections.Concurrent.dll
-C:\Workspace\ProgrammingAdvanced\TestatNuGet\bin\Debug\System.Collections.dll
-C:\Workspace\ProgrammingAdvanced\TestatNuGet\bin\Debug\System.Collections.NonGeneric.dll
-C:\Workspace\ProgrammingAdvanced\TestatNuGet\bin\Debug\System.Collections.Specialized.dll
-C:\Workspace\ProgrammingAdvanced\TestatNuGet\bin\Debug\System.ComponentModel.dll
-C:\Workspace\ProgrammingAdvanced\TestatNuGet\bin\Debug\System.ComponentModel.EventBasedAsync.dll
-C:\Workspace\ProgrammingAdvanced\TestatNuGet\bin\Debug\System.ComponentModel.Primitives.dll
-C:\Workspace\ProgrammingAdvanced\TestatNuGet\bin\Debug\System.ComponentModel.TypeConverter.dll
-C:\Workspace\ProgrammingAdvanced\TestatNuGet\bin\Debug\System.Console.dll
-C:\Workspace\ProgrammingAdvanced\TestatNuGet\bin\Debug\System.Data.Common.dll
-C:\Workspace\ProgrammingAdvanced\TestatNuGet\bin\Debug\System.Diagnostics.Contracts.dll
-C:\Workspace\ProgrammingAdvanced\TestatNuGet\bin\Debug\System.Diagnostics.Debug.dll
-C:\Workspace\ProgrammingAdvanced\TestatNuGet\bin\Debug\System.Diagnostics.FileVersionInfo.dll
-C:\Workspace\ProgrammingAdvanced\TestatNuGet\bin\Debug\System.Diagnostics.Process.dll
-C:\Workspace\ProgrammingAdvanced\TestatNuGet\bin\Debug\System.Diagnostics.StackTrace.dll
-C:\Workspace\ProgrammingAdvanced\TestatNuGet\bin\Debug\System.Diagnostics.TextWriterTraceListener.dll
-C:\Workspace\ProgrammingAdvanced\TestatNuGet\bin\Debug\System.Diagnostics.Tools.dll
-C:\Workspace\ProgrammingAdvanced\TestatNuGet\bin\Debug\System.Diagnostics.TraceSource.dll
-C:\Workspace\ProgrammingAdvanced\TestatNuGet\bin\Debug\System.Diagnostics.Tracing.dll
-C:\Workspace\ProgrammingAdvanced\TestatNuGet\bin\Debug\System.Drawing.Primitives.dll
-C:\Workspace\ProgrammingAdvanced\TestatNuGet\bin\Debug\System.Dynamic.Runtime.dll
-C:\Workspace\ProgrammingAdvanced\TestatNuGet\bin\Debug\System.Globalization.Calendars.dll
-C:\Workspace\ProgrammingAdvanced\TestatNuGet\bin\Debug\System.Globalization.dll
-C:\Workspace\ProgrammingAdvanced\TestatNuGet\bin\Debug\System.Globalization.Extensions.dll
-C:\Workspace\ProgrammingAdvanced\TestatNuGet\bin\Debug\System.IO.Compression.dll
-C:\Workspace\ProgrammingAdvanced\TestatNuGet\bin\Debug\System.IO.Compression.ZipFile.dll
-C:\Workspace\ProgrammingAdvanced\TestatNuGet\bin\Debug\System.IO.dll
-C:\Workspace\ProgrammingAdvanced\TestatNuGet\bin\Debug\System.IO.FileSystem.dll
-C:\Workspace\ProgrammingAdvanced\TestatNuGet\bin\Debug\System.IO.FileSystem.DriveInfo.dll
-C:\Workspace\ProgrammingAdvanced\TestatNuGet\bin\Debug\System.IO.FileSystem.Primitives.dll
-C:\Workspace\ProgrammingAdvanced\TestatNuGet\bin\Debug\System.IO.FileSystem.Watcher.dll
-C:\Workspace\ProgrammingAdvanced\TestatNuGet\bin\Debug\System.IO.IsolatedStorage.dll
-C:\Workspace\ProgrammingAdvanced\TestatNuGet\bin\Debug\System.IO.MemoryMappedFiles.dll
-C:\Workspace\ProgrammingAdvanced\TestatNuGet\bin\Debug\System.IO.Pipes.dll
-C:\Workspace\ProgrammingAdvanced\TestatNuGet\bin\Debug\System.IO.UnmanagedMemoryStream.dll
-C:\Workspace\ProgrammingAdvanced\TestatNuGet\bin\Debug\System.Linq.dll
-C:\Workspace\ProgrammingAdvanced\TestatNuGet\bin\Debug\System.Linq.Expressions.dll
-C:\Workspace\ProgrammingAdvanced\TestatNuGet\bin\Debug\System.Linq.Parallel.dll
-C:\Workspace\ProgrammingAdvanced\TestatNuGet\bin\Debug\System.Linq.Queryable.dll
-C:\Workspace\ProgrammingAdvanced\TestatNuGet\bin\Debug\System.Net.Http.dll
-C:\Workspace\ProgrammingAdvanced\TestatNuGet\bin\Debug\System.Net.NameResolution.dll
-C:\Workspace\ProgrammingAdvanced\TestatNuGet\bin\Debug\System.Net.NetworkInformation.dll
-C:\Workspace\ProgrammingAdvanced\TestatNuGet\bin\Debug\System.Net.Ping.dll
-C:\Workspace\ProgrammingAdvanced\TestatNuGet\bin\Debug\System.Net.Primitives.dll
-C:\Workspace\ProgrammingAdvanced\TestatNuGet\bin\Debug\System.Net.Requests.dll
-C:\Workspace\ProgrammingAdvanced\TestatNuGet\bin\Debug\System.Net.Security.dll
-C:\Workspace\ProgrammingAdvanced\TestatNuGet\bin\Debug\System.Net.Sockets.dll
-C:\Workspace\ProgrammingAdvanced\TestatNuGet\bin\Debug\System.Net.WebHeaderCollection.dll
-C:\Workspace\ProgrammingAdvanced\TestatNuGet\bin\Debug\System.Net.WebSockets.Client.dll
-C:\Workspace\ProgrammingAdvanced\TestatNuGet\bin\Debug\System.Net.WebSockets.dll
-C:\Workspace\ProgrammingAdvanced\TestatNuGet\bin\Debug\System.ObjectModel.dll
-C:\Workspace\ProgrammingAdvanced\TestatNuGet\bin\Debug\System.Reflection.dll
-C:\Workspace\ProgrammingAdvanced\TestatNuGet\bin\Debug\System.Reflection.Extensions.dll
-C:\Workspace\ProgrammingAdvanced\TestatNuGet\bin\Debug\System.Reflection.Primitives.dll
-C:\Workspace\ProgrammingAdvanced\TestatNuGet\bin\Debug\System.Resources.Reader.dll
-C:\Workspace\ProgrammingAdvanced\TestatNuGet\bin\Debug\System.Resources.ResourceManager.dll
-C:\Workspace\ProgrammingAdvanced\TestatNuGet\bin\Debug\System.Resources.Writer.dll
-C:\Workspace\ProgrammingAdvanced\TestatNuGet\bin\Debug\System.Runtime.CompilerServices.VisualC.dll
-C:\Workspace\ProgrammingAdvanced\TestatNuGet\bin\Debug\System.Runtime.dll
-C:\Workspace\ProgrammingAdvanced\TestatNuGet\bin\Debug\System.Runtime.Extensions.dll
-C:\Workspace\ProgrammingAdvanced\TestatNuGet\bin\Debug\System.Runtime.Handles.dll
-C:\Workspace\ProgrammingAdvanced\TestatNuGet\bin\Debug\System.Runtime.InteropServices.dll
-C:\Workspace\ProgrammingAdvanced\TestatNuGet\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
-C:\Workspace\ProgrammingAdvanced\TestatNuGet\bin\Debug\System.Runtime.Numerics.dll
-C:\Workspace\ProgrammingAdvanced\TestatNuGet\bin\Debug\System.Runtime.Serialization.Formatters.dll
-C:\Workspace\ProgrammingAdvanced\TestatNuGet\bin\Debug\System.Runtime.Serialization.Json.dll
-C:\Workspace\ProgrammingAdvanced\TestatNuGet\bin\Debug\System.Runtime.Serialization.Primitives.dll
-C:\Workspace\ProgrammingAdvanced\TestatNuGet\bin\Debug\System.Runtime.Serialization.Xml.dll
-C:\Workspace\ProgrammingAdvanced\TestatNuGet\bin\Debug\System.Security.Claims.dll
-C:\Workspace\ProgrammingAdvanced\TestatNuGet\bin\Debug\System.Security.Cryptography.Algorithms.dll
-C:\Workspace\ProgrammingAdvanced\TestatNuGet\bin\Debug\System.Security.Cryptography.Csp.dll
-C:\Workspace\ProgrammingAdvanced\TestatNuGet\bin\Debug\System.Security.Cryptography.Encoding.dll
-C:\Workspace\ProgrammingAdvanced\TestatNuGet\bin\Debug\System.Security.Cryptography.Primitives.dll
-C:\Workspace\ProgrammingAdvanced\TestatNuGet\bin\Debug\System.Security.Cryptography.X509Certificates.dll
-C:\Workspace\ProgrammingAdvanced\TestatNuGet\bin\Debug\System.Security.Principal.dll
-C:\Workspace\ProgrammingAdvanced\TestatNuGet\bin\Debug\System.Security.SecureString.dll
-C:\Workspace\ProgrammingAdvanced\TestatNuGet\bin\Debug\System.Text.Encoding.dll
-C:\Workspace\ProgrammingAdvanced\TestatNuGet\bin\Debug\System.Text.Encoding.Extensions.dll
-C:\Workspace\ProgrammingAdvanced\TestatNuGet\bin\Debug\System.Text.RegularExpressions.dll
-C:\Workspace\ProgrammingAdvanced\TestatNuGet\bin\Debug\System.Threading.dll
-C:\Workspace\ProgrammingAdvanced\TestatNuGet\bin\Debug\System.Threading.Overlapped.dll
-C:\Workspace\ProgrammingAdvanced\TestatNuGet\bin\Debug\System.Threading.Tasks.dll
-C:\Workspace\ProgrammingAdvanced\TestatNuGet\bin\Debug\System.Threading.Tasks.Parallel.dll
-C:\Workspace\ProgrammingAdvanced\TestatNuGet\bin\Debug\System.Threading.Thread.dll
-C:\Workspace\ProgrammingAdvanced\TestatNuGet\bin\Debug\System.Threading.ThreadPool.dll
-C:\Workspace\ProgrammingAdvanced\TestatNuGet\bin\Debug\System.Threading.Timer.dll
-C:\Workspace\ProgrammingAdvanced\TestatNuGet\bin\Debug\System.ValueTuple.dll
-C:\Workspace\ProgrammingAdvanced\TestatNuGet\bin\Debug\System.Xml.ReaderWriter.dll
-C:\Workspace\ProgrammingAdvanced\TestatNuGet\bin\Debug\System.Xml.XDocument.dll
-C:\Workspace\ProgrammingAdvanced\TestatNuGet\bin\Debug\System.Xml.XmlDocument.dll
-C:\Workspace\ProgrammingAdvanced\TestatNuGet\bin\Debug\System.Xml.XmlSerializer.dll
-C:\Workspace\ProgrammingAdvanced\TestatNuGet\bin\Debug\System.Xml.XPath.dll
-C:\Workspace\ProgrammingAdvanced\TestatNuGet\bin\Debug\System.Xml.XPath.XDocument.dll
-C:\Workspace\ProgrammingAdvanced\TestatNuGet\bin\Debug\DuplicateCheckerLib.dll
-C:\Workspace\ProgrammingAdvanced\TestatNuGet\obj\Debug\TestatNuGet.exe.config
+C:\Users\waldburger\Dropbox\HF\Programmierung II\TestatNuGet\Abgabe\TestatNuGet\source\bin\Debug\TestatNuGet.exe.config
+C:\Users\waldburger\Dropbox\HF\Programmierung II\TestatNuGet\Abgabe\TestatNuGet\source\bin\Debug\TestatNuGet.exe
+C:\Users\waldburger\Dropbox\HF\Programmierung II\TestatNuGet\Abgabe\TestatNuGet\source\bin\Debug\TestatNuGet.pdb
+C:\Users\waldburger\Dropbox\HF\Programmierung II\TestatNuGet\Abgabe\TestatNuGet\source\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\waldburger\Dropbox\HF\Programmierung II\TestatNuGet\Abgabe\TestatNuGet\source\bin\Debug\Google.Protobuf.dll
+C:\Users\waldburger\Dropbox\HF\Programmierung II\TestatNuGet\Abgabe\TestatNuGet\source\bin\Debug\MySql.Data.dll
+C:\Users\waldburger\Dropbox\HF\Programmierung II\TestatNuGet\Abgabe\TestatNuGet\source\bin\Debug\Google.Protobuf.xml
+C:\Users\waldburger\Dropbox\HF\Programmierung II\TestatNuGet\Abgabe\TestatNuGet\source\bin\Debug\MySql.Data.xml
+C:\Users\waldburger\Dropbox\HF\Programmierung II\TestatNuGet\Abgabe\TestatNuGet\source\obj\Debug\TestatNuGet.csprojAssemblyReference.cache
+C:\Users\waldburger\Dropbox\HF\Programmierung II\TestatNuGet\Abgabe\TestatNuGet\source\obj\Debug\View\LogMessageAddView.baml
+C:\Users\waldburger\Dropbox\HF\Programmierung II\TestatNuGet\Abgabe\TestatNuGet\source\obj\Debug\MainWindow.g.cs
+C:\Users\waldburger\Dropbox\HF\Programmierung II\TestatNuGet\Abgabe\TestatNuGet\source\obj\Debug\View\LogMessageAddView.g.cs
+C:\Users\waldburger\Dropbox\HF\Programmierung II\TestatNuGet\Abgabe\TestatNuGet\source\obj\Debug\View\LogentriesView.g.cs
+C:\Users\waldburger\Dropbox\HF\Programmierung II\TestatNuGet\Abgabe\TestatNuGet\source\obj\Debug\View\NavigationView.g.cs
+C:\Users\waldburger\Dropbox\HF\Programmierung II\TestatNuGet\Abgabe\TestatNuGet\source\obj\Debug\App.g.cs
+C:\Users\waldburger\Dropbox\HF\Programmierung II\TestatNuGet\Abgabe\TestatNuGet\source\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\waldburger\Dropbox\HF\Programmierung II\TestatNuGet\Abgabe\TestatNuGet\source\obj\Debug\TestatNuGet_MarkupCompile.cache
+C:\Users\waldburger\Dropbox\HF\Programmierung II\TestatNuGet\Abgabe\TestatNuGet\source\obj\Debug\TestatNuGet_MarkupCompile.lref
+C:\Users\waldburger\Dropbox\HF\Programmierung II\TestatNuGet\Abgabe\TestatNuGet\source\obj\Debug\MainWindow.baml
+C:\Users\waldburger\Dropbox\HF\Programmierung II\TestatNuGet\Abgabe\TestatNuGet\source\obj\Debug\View\LogentriesView.baml
+C:\Users\waldburger\Dropbox\HF\Programmierung II\TestatNuGet\Abgabe\TestatNuGet\source\obj\Debug\View\NavigationView.baml
+C:\Users\waldburger\Dropbox\HF\Programmierung II\TestatNuGet\Abgabe\TestatNuGet\source\obj\Debug\TestatNuGet.g.resources
+C:\Users\waldburger\Dropbox\HF\Programmierung II\TestatNuGet\Abgabe\TestatNuGet\source\obj\Debug\TestatNuGet.Properties.Resources.resources
+C:\Users\waldburger\Dropbox\HF\Programmierung II\TestatNuGet\Abgabe\TestatNuGet\source\obj\Debug\TestatNuGet.csproj.GenerateResource.cache
+C:\Users\waldburger\Dropbox\HF\Programmierung II\TestatNuGet\Abgabe\TestatNuGet\source\obj\Debug\TestatNuGet.csproj.CoreCompileInputs.cache
+C:\Users\waldburger\Dropbox\HF\Programmierung II\TestatNuGet\Abgabe\TestatNuGet\source\obj\Debug\TestatNuGet.csproj.CopyComplete
+C:\Users\waldburger\Dropbox\HF\Programmierung II\TestatNuGet\Abgabe\TestatNuGet\source\obj\Debug\TestatNuGet.exe
+C:\Users\waldburger\Dropbox\HF\Programmierung II\TestatNuGet\Abgabe\TestatNuGet\source\obj\Debug\TestatNuGet.pdb
